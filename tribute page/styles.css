@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif', serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg-body);
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+.container {
+    padding: 2rem 0;
+}
+:root {
+    --bg-body: #cef1e7;
+    --bg-interesting-facts:#f2aede;
+    --bg-heading:#05212c;
+    --bg-achivemnts:#8de8f6;
+}
+
+.hero__about{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 2rem;
+}
+.hero__description {
+    max-width: 70%;
+    margin-top: 2rem;
+    
+    font-size: 1.3rem;
+}
+
+.hero .hero__image img  {
+    width:20rem;
+    height: 24rem;
+    position: relative;
+    left: -5rem;
+    border-radius: 10%;
+}
+.image-section img {
+    width:17rem;
+    height: 20rem;
+    border-radius: 10%;
+}
+.heading,.heading-2,.heading-3{
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--bg-heading);
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.hero__heading{
+text-align: left;
+font-size:2.2rem ;
+}
+.factItem {
+    list-style: disc;
+    margin: 2rem;
+    font-size:1.2rem
+}
+.facts-section{
+    display: flex;
+    justify-content: space-between;
+}
+.fact-image img {
+    height: 20rem;
+    border-radius: 10%;
+}
+.fact{
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--bg-interesting-facts);
+}
+.contribution {
+    padding: 2rem 1rem 0;
+}
+
+ /* .achivements {
+    background-color: var(--bg-achivemnts);
+} */
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+} 
+.item{
+    margin: 2rem;
+}
+.achivements{
+    background-color: var(--bg-achivemnts);
+    overflow: hidden;
+    padding: 2rem;
+}
+
+footer h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+@media screen and (max-width: 800px) {
+    .hero__about {
+        flex-direction: column;
+    }
+    .hero__intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__image,.image-section,.fact-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .hero__image{
+    position: relative;
+    left: 5rem;
+    }
+
+    .facts-section{
+        flex-direction: column;
+    }
+    .info {
+        flex-direction: column;
+    }
+    
+  
+}
+ 
+
+
